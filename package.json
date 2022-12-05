@@ -1,0 +1,14 @@
+{
+  "name": "advent-of-code-2022",
+  "version": "1.0.0",
+  "description": "https://adventofcode.com/2022",
+  "scripts": {
+    "test": "python3 -m unittest discover -s src -p 'test_*.py'"
+  },
+  "keywords": [
+    "python"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {}
+}
