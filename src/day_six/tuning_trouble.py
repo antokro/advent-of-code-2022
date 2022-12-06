@@ -1,15 +1,7 @@
-def tuning_trouble_part_one(buffer):
+def tuning_trouble(buffer, sequence):
     length = len(buffer)
     for x in range(length):
-        end_marker = x + 4
-        marker = buffer[x:end_marker]
-        if len(set(marker)) == len(marker):
-            return end_marker
-
-def tuning_trouble_part_two(buffer):
-    length = len(buffer)
-    for x in range(length):
-        end_marker = x + 14
+        end_marker = x + sequence
         marker = buffer[x:end_marker]
         if len(set(marker)) == len(marker):
             return end_marker
