@@ -1,3 +1,5 @@
+import unittest
+
 sections = [
 '2-4,6-8',
 '2-3,4-5',
@@ -6,8 +8,6 @@ sections = [
 '6-6,4-6',
 '2-6,4-8',
 ]
-
-import unittest
 
 from day_four.camp_cleanup import camp_cleanup
 

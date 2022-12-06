@@ -23,9 +23,6 @@ def supply_stacks(stacks, movements, moverType):
     for s in stacks:
         top_boxes.append(s[-1:][0])
 
-
-    print('The top boxes are: ',''.join(top_boxes))
-
     return ''.join(top_boxes)
 
 

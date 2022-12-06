@@ -23,10 +23,5 @@ def camp_cleanup(sections):
     #PART 2
         if team_one_from <= team_two_to and team_two_from <= team_one_to:
             counter_part_2 = counter_part_2 +1
-            
-
-
-    print("Sections fully contained by the other: ",counter_part_1)
-    print("Sections that overlap: ", counter_part_2)
 
     return (counter_part_1, counter_part_2)

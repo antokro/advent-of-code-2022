@@ -40,6 +40,8 @@ stacks_two = [
 with open('/Users/antonia/Documents/advent-of-code-2022/src/day_five/input.txt') as f:
     movements = f.read().splitlines()
 
-supply_stacks(stacks,movements, 9000)
+result_9000 = supply_stacks(stacks,movements, 9000)
+print('The top boxes are: ',''.join(result_9000))
 
-supply_stacks(stacks_two,movements, 9001)
+result_9001 = supply_stacks(stacks_two,movements, 9001)
+print('The top boxes are: ',''.join(result_9001))

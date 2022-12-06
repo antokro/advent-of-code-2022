@@ -79,8 +79,6 @@ def rucksack_reorganisation(rucksacks):
                 priorities = priorities + value_dictionary[sliced_item]
                 break
 
-    print("Priorities are: ",priorities)
-
     # PART 2
     priorities_part_two = 0 
     grouped_rucksacks = list(divide_chunks(rucksacks, 3))
@@ -97,8 +95,6 @@ def rucksack_reorganisation(rucksacks):
                 if item in grouped_splitted_rucksacks[2]:
                     priorities_part_two = priorities_part_two + value_dictionary[item]
                     break
-
-    print("Priorities are: ",priorities_part_two)
 
     return (priorities, priorities_part_two)
 
