@@ -10,7 +10,7 @@
 
 points = { 'A': 1, 'B': 2, 'C': 3, 'X': 1, 'Y': 2, 'Z': 3  }
 
-def rock_paper_scissor_part_one(list):
+def rock_paper_scissor_part_one(list:list):
 
     total = 0
     for x in range(len(list)):
@@ -34,7 +34,7 @@ def rock_paper_scissor_part_one(list):
 #  * Opponent: A for Rock, B for Paper, and C for Scissors.
 #  */
 
-def rock_paper_scissor_part_two(list):
+def rock_paper_scissor_part_two(list:list):
     total = 0
     for x in range(len(list)):
         list[x] = list[x].split(' ')

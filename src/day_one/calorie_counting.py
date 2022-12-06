@@ -1,7 +1,4 @@
-from utils.utils import split_to_sublists
-
-
-def calorie_counting(list):
+def calorie_counting(list:list):
     for x in range(len(list)):
         if list[x] == '':
             list[x] = '#'
@@ -24,7 +21,7 @@ def calorie_counting(list):
 
     return (top_elf,top_three_elf)
 
-def split_to_sublists(list, delimiter):
+def split_to_sublists(list:list, delimiter:str):
     temp = []
     final = []
     for item in list:

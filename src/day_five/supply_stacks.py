@@ -1,4 +1,4 @@
-def supply_stacks(stacks, movements, moverType):
+def supply_stacks(stacks:list, movements:list, moverType:int):
     transformed_movements = []
     for x in range(len(movements)):
         amount = int(movements[x].split(' ')[1])

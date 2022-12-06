@@ -1,4 +1,5 @@
-# https://adventofcode.com/2022/day/5
+# https://adventofcode.com/2022/day/6
+
 from tuning_trouble import tuning_trouble
 
 with open('/Users/antonia/Documents/advent-of-code-2022/src/day_six/input.txt') as f:

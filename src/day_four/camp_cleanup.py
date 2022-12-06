@@ -1,4 +1,4 @@
-def camp_cleanup(sections):
+def camp_cleanup(sections:list):
     counter_part_1 = 0
     counter_part_2 = 0
 

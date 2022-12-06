@@ -55,7 +55,7 @@ def divide_chunks(l, n):
     for i in range(0, len(l), n):
          yield l[i:i + n]
 
-def rucksack_reorganisation(rucksacks):
+def rucksack_reorganisation(rucksacks:list):
     sliced_rucksacks = []
     priorities = 0
 

@@ -1,4 +1,4 @@
-def tuning_trouble(buffer, sequence):
+def tuning_trouble(buffer: list, sequence: int):
     length = len(buffer)
     for x in range(length):
         end_marker = x + sequence
