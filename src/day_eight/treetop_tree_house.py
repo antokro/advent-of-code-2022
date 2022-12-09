@@ -4,6 +4,7 @@
 # # 33549 3
 # # 35390 4
 # # 01234
+
 def treetop_tree_house(trees: list):
     total = 0
     left_an_right_col = (len(trees) - 2) *2 # left and right column, substract beginning and end, because it's included in lenght of row
@@ -28,9 +29,9 @@ def treetop_tree_house(trees: list):
                 scenic_score.append(find_scenic_score(trees, i+1, x, t_as_number, left, right ))
 
     total += first_and_last_row + left_an_right_col
-    # scenic_score.sort()
-    # scenic_score.reverse()
-    print(scenic_score)
+    scenic_score.sort()
+    scenic_score.reverse()
+
     return (total, scenic_score[0])
 
 def isLarger(singleTree: int, trees: str):
@@ -61,42 +62,47 @@ def find_scenic_score(trees: list, colPosition: int, rowPosition: int, singleTre
     col_length = len(trees)
 
     # up
+    temp_up = []
     for x in range(0, rowPosition):
-        if singleTree > int(trees[x][colPosition]):
+        temp_up.append(int(trees[x][colPosition]))
+
+    temp_up.reverse()
+    for t in temp_up:
+        if singleTree > t:
             up += 1
-        elif singleTree <= int(trees[x][colPosition]):
+        elif singleTree <= t:
             up += 1
             break
+        
+     
 
     # down
+    temp_down = []
     for x in range(rowPosition+1,col_length):
-        if singleTree > int(trees[x][colPosition]):
+        temp_down.append(int(trees[x][colPosition]))
+    for t in temp_down:
+        if singleTree > t:
             down += 1
-        elif singleTree <= int(trees[x][colPosition]) :
+        elif singleTree <= t:
             down += 1
             break
-
-    for l in left_trees:
+        
+    # left
+    reverses_left_trees = left_trees[::-1]
+    for l in reverses_left_trees:
         if singleTree > int(l):
             left += 1
         elif singleTree <= int(l):
             left += 1
             break
-
+    # right
     for r in right_trees:
         if singleTree > int(r):
             right += 1
         elif singleTree <= int(r):
             right += 1
             break
-    print(singleTree, up, left, down, right)
+    
     return up * down * left * right
-
-
-
-# 535680
-# 1784640
-# 5 2 2 1 1
-# 5 2 2 1 2
 
 
