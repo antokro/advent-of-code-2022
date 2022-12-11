@@ -11,13 +11,6 @@ sections = [
 
 from day_four.camp_cleanup import camp_cleanup
 
-test_rucksacks = ['vJrwpWtwJgWrhcsFMMfFFhFp',
-'jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL',
-'PmmdzqPrVvPwwTWBwg',
-'wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn',
-'ttgJtRGJQctTZtZT',
-'CrZsJsPPZsGzwwsLwLmpwMDw']
-
 class TestCampCleanup(unittest.TestCase):
     def test_camp_cleanup(self):
         actual = camp_cleanup(sections)
